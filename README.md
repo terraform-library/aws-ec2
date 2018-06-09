@@ -62,12 +62,6 @@ module "ec2_instance" {
 - volume_size
 - delete_on_termination
 
-Authors
-=======
-
-Created and maintained by [Brandon Burton](https://github.com/solarce)
-(brandon@inatree.org).
-
 License
 =======
 
