@@ -23,12 +23,6 @@ variable "user_data" {
   description = "The path to a file with user_data for the instances"
 }
 
-variable "tags" {
-  default = {
-    created_by = "terraform"
-  }
-}
-
 variable "public_ip" {
   description = "enable or disable publicip"
 }

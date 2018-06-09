@@ -21,19 +21,11 @@ resource "aws_instance" "ec2_instance" {
   }
 
   tags {
-    created_by = "${lookup(var.tags,"created_by")}"
-
-    // Takes the instance_name input variable and adds
-    //  the count.index to the name., e.g.
     //  "example-host-web-1"
     Name = "${var.instance_name}-${count.index}"
   }
 
   volume_tags {
-    created_by = "${lookup(var.tags,"created_by")}"
-
-    // Takes the instance_name input variable and adds
-    //  the count.index to the name., e.g.
     //  "example-host-web-1"
     Name = "${var.instance_name}-${count.index}"
   }
